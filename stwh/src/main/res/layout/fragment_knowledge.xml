@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#ffffffff"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/main_actionbar"
+        android:text="知识"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="这里是知识模块"
+        android:textColor="#21282D"
+        android:textSize="36sp"
+        android:gravity="center"
+        />
+</LinearLayout>

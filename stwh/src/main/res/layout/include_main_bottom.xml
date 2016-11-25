@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioGroup
+        android:id="@+id/main_bottom_radiogroup"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/main_radiobutton_knowledge_01"
+            android:drawableTop="@drawable/knowledge_selector"
+            style="@style/radio_bottom_style"/>
+        <RadioButton
+            android:id="@+id/main_radiobutton_skill_02"
+            android:drawableTop="@drawable/skill_selector"
+            style="@style/radio_bottom_style"/>
+        <RadioButton
+            android:id="@+id/main_radiobutton_book_03"
+            android:drawableTop="@drawable/book_selector"
+            style="@style/radio_bottom_style"/>
+        <RadioButton
+            android:id="@+id/main_radiobutton_message_04"
+            android:drawableTop="@drawable/message_selector"
+            style="@style/radio_bottom_style"/>
+        <RadioButton
+            android:id="@+id/main_radiobutton_me_05"
+            android:drawableTop="@drawable/me_selector"
+            android:checked="true"
+            style="@style/radio_bottom_style"/>
+    </RadioGroup>
+
+</LinearLayout>
