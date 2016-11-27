@@ -6,13 +6,18 @@
     <TextView
         style="@style/main_actionbar"
         android:text="技能交换"/>
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:text="这里是技能交换模块"
-        android:textColor="#21282D"
+        android:textColor="#000"
         android:textSize="36sp"
         android:gravity="center"
         />
+        <include layout="@layout/btns"/>
+    </FrameLayout>
 </LinearLayout>

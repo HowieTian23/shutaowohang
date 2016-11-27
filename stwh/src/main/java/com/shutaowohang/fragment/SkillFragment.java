@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.shutaowohang.R;
+import com.shutaowohang.fab.FloatingActionButtonPlus;
 
 /**
  *
@@ -16,11 +17,13 @@ import com.shutaowohang.R;
 
 public class SkillFragment extends Fragment {
     private View convertView;
+    private FloatingActionButtonPlus mActionButtonPlus;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         convertView=inflater.inflate(R.layout.fragment_skill,container,false);
+        mActionButtonPlus = (FloatingActionButtonPlus) convertView.findViewById(R.id.FabPlus);
         return convertView;
     }
 }

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">书淘我杭</string>
+    <string name="action_settings">Settings</string>
 </resources>

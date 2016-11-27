@@ -3,6 +3,7 @@ package com.shutaowohang;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.widget.RadioGroup;
 
 import com.shutaowohang.adapter.MyFragmentAdapter;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         initialFragment();
         setListener();
     }
@@ -90,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
     private void initialFragment() {
         adapter=new MyFragmentAdapter(getSupportFragmentManager());
         viewPager= (ViewPager) findViewById(R.id.main_viewpager);
+        viewPager.setOffscreenPageLimit(5);
         radioGroup= (RadioGroup) findViewById(R.id.main_bottom_radiogroup);
         bookFragment=new BookFragment();
         knowledgeFragment=new KnowledgeFragment();
