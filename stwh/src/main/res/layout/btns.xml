@@ -1,0 +1,52 @@
+<com.shutaowohang.fab.FloatingActionButtonPlus xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/FabPlus"
+    android:layout_gravity="end|bottom"
+    android:layout_margin="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="com.shutaowohang.fab.FabBehavior"
+    app:mBackgroundColor="@android:color/transparent"
+    app:switchFabColor="#DB4537"
+    app:switchFabIcon="@mipmap/ic_add_white_48dp">
+
+    <com.shutaowohang.fab.FabTagLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tagText="发布知识">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_send_white_48dp"
+            app:backgroundTint="#4BB7A7"
+            app:fabSize="mini" />
+    </com.shutaowohang.fab.FabTagLayout>
+
+    <com.shutaowohang.fab.FabTagLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tagText="发布技能">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_shopping_cart_white_48dp"
+            app:backgroundTint="#ff9800"
+            app:fabSize="mini" />
+    </com.shutaowohang.fab.FabTagLayout>
+
+    <com.shutaowohang.fab.FabTagLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tagText="发布书籍">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_search_white_48dp"
+            app:backgroundTint="#4284E4"
+            app:fabSize="mini" />
+    </com.shutaowohang.fab.FabTagLayout>
+
+</com.shutaowohang.fab.FloatingActionButtonPlus>

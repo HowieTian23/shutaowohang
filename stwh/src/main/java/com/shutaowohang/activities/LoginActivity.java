@@ -8,7 +8,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.shutaowohang.MainActivity;
@@ -53,10 +52,11 @@ public class LoginActivity extends Activity {
     void login(View view){
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
-
+        finish();
     }
     @OnClick(R.id.iv_qq)
     void showqq(){
         Toast.makeText(this,"QQQ",Toast.LENGTH_SHORT).show();
     }
+
 }
